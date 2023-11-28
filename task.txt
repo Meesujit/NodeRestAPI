@@ -14,7 +14,8 @@
                         -> Edit 
                         -> Delete
          task at a time.
-    5. send POST req through the postman and created a middleware in index.js.
+    5. send POST,GET,PUT,PATCH req through the postman and created a middleware in index.js.
+    TODO: PATCH isn't working so working on that porocess and implement various operations in upcoming days.
     
 
 
