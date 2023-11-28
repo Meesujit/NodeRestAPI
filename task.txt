@@ -1,0 +1,40 @@
+*Note- 
+    1.Mocakroo for random data generator(useing json).....
+    2.For Desktop users the we render the json file on call of '/users/'
+        which print a HTML Document file in browser. apart from that for 
+        mobile user we can set the url as '/api/users/' for hybrid server.
+        it's a good pratice for the both browser and mobile users.
+        (if it's 'api/users/' url then throw a json data otherwise it throw 
+        a HTML file on calling the  url '/users')
+    3. in POST, PATCH, DELETE have some problem within it.
+        the browser by default do the GET req.
+    4. With GET, PATCH, DELETE have the same route(path) -> '/api/users/:id'
+        with the grouping we can perform 
+                        -> getting single 
+                        -> Edit 
+                        -> Delete
+         task at a time.
+    5. send POST req through the postman and created a middleware in index.js.
+    
+
+
+Building Rest api (support json data).
+
+Dealing with users
+ => GET /users - HTML Document Rendering - done
+ => GET /api/users - List all users  - done
+
+     GET/api/users/1 - Get the user with id = 1 - done
+     GET/api/users/2 - Get the user with id = 2 - done
+
+     Dynamic Path parameter to get the id (1,2,3,4,5.....)
+     GET /api/users/:id - done
+     :id-> its a variable which is Dynamic 
+     
+    
+=> POST/api/users - create new users
+
+
+=> PATCH/api/users/1 - Edit the user with id = 1
+=> DELETE/api/users/1 - Delete the user with id = 1
+
