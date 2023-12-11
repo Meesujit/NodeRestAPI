@@ -37,6 +37,10 @@ app.get('/users', (req, res) => {
 // REST api part start.
 // GET /api/users -> all json data
 app.get('/api/users', (req, res) => {
+    // setHeader for setting Custom header (check the postman).
+    // always add X to Custom header.
+    res.setHeader('X-myName', 'Piyush Garg'); 
+    console.log(req.headers);
     return res.json(users)
 })
 
